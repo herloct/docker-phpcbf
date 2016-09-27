@@ -2,7 +2,7 @@
 
 ## What's Inside
 
-This image is based on [official PHP image](https://hub.docker.com/_/php/),
+This image is based on [official PHP 7.0 image](https://hub.docker.com/_/php/),
 using Alpine Linux instead of Debian for smaller size.
 
 ## Supported tags and respective `Dockerfile` links
