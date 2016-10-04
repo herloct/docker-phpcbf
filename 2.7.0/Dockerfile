@@ -6,7 +6,7 @@ RUN apk update --no-cache && \
     apk add --no-cache su-exec && \
     rm -rf /var/cache/apk/* /var/tmp/* /tmp/*
 
-RUN curl -L https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar > /usr/local/bin/phpcbf && \
+RUN curl -L https://github.com/squizlabs/PHP_CodeSniffer/releases/download/2.7.0/phpcbf.phar > /usr/local/bin/phpcbf && \
     chmod +x /usr/local/bin/phpcbf
 
 RUN mkdir -p /project
