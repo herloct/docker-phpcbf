@@ -6,9 +6,9 @@
 
 ## What is PHP_CodeSniffer and phpcbf?
 
-PHP_CodeSniffer is an essential development tool that ensures your code remains clean and consistent.
+PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.
 
-`phpcbf` is a script to automatically correct coding standard violations.
+PHP_CodeSniffer's `phpcbf` is a script to automatically correct coding standard violations.
 
 > https://github.com/squizlabs/PHP_CodeSniffer
 
