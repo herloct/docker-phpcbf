@@ -1,15 +1,16 @@
-[Docker](http://www.docker.com/) image for [PHP_CodeSniffer](http://php.net)'s `phpcbf`.
-
-[![](https://images.microbadger.com/badges/image/herloct/phpcbf.svg)](http://microbadger.com/images/herloct/phpcbf "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/herloct/phpcbf.svg)](http://microbadger.com/images/herloct/phpcbf "Get your own version badge on microbadger.com")
-
-## What's Inside
-
-This image is based on [official PHP 7.0 image](https://hub.docker.com/_/php/),
-using Alpine Linux instead of Debian for smaller size.
+[![](https://images.microbadger.com/badges/image/herloct/phpcbf.svg)](http://microbadger.com/images/herloct/phpcbf "Get your own image badge on microbadger.com")
 
 ## Supported tags and respective `Dockerfile` links
 
 * [`2.7.0`, `latest`](https://github.com/herloct/docker-phpcbf/blob/master/2.7.0/Dockerfile)
+
+## What is PHP_CodeSniffer and phpcbf?
+
+PHP_CodeSniffer is an essential development tool that ensures your code remains clean and consistent.
+
+`phpcbf` is a script to automatically correct coding standard violations.
+
+> https://github.com/squizlabs/PHP_CodeSniffer
 
 ## How to use this image
 
@@ -22,7 +23,7 @@ docker run --rm \
     herloct/phpcbf [<options>]
 ```
 
-For example, to fix `src` directory to PSR1 and PSR2 standard.
+For example, to fix `src` directory to follow PSR1 and PSR2 standard.
 
 ```sh
 docker run --rm \
