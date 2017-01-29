@@ -2,7 +2,7 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`2.7.0`, `latest`](https://github.com/herloct/docker-phpcbf/blob/master/2.7.0/Dockerfile)
+* [`2.7.1`, `latest`](https://github.com/herloct/docker-phpcbf/blob/2.7.1/Dockerfile)
 
 ## What is PHP_CodeSniffer and phpcbf?
 
@@ -18,8 +18,8 @@ Basic usage using current user id (uid).
 
 ```sh
 docker run --rm \
-    -e LOCAL_USER_ID=$(id -u) \
-    -v /local/path:/project \
+    --user $(id -u):$(id -g) \
+    --volume $(pwd):/project \
     herloct/phpcbf [<options>]
 ```
 
@@ -27,7 +27,11 @@ For example, to fix `src` directory to follow PSR1 and PSR2 standard.
 
 ```sh
 docker run --rm \
-    -e LOCAL_USER_ID=$(id -u) \
-    -v /local/path:/project \
+    --user $(id -u):$(id -g) \
+    --volume $(pwd):/project \
     herloct/phpcbf --no-patch --standard=PSR1,PSR2 src
 ```
+
+## Volumes
+
+* **/project**: Your PHP project directory.
